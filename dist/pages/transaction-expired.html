@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Transaction Expired</title>
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <!-- App Bar -->
+      <div
+        class="fixed top-0 left-0 z-10 flex items-center w-full gap-5 p-4 text-gray-900 bg-white"
+      >
+        <a
+          href="#"
+          class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+          onclick="history.back()"
+        >
+          <span
+            class="block i-material-symbols-arrow-left-alt-rounded text-icon-md"
+          ></span>
+        </a>
+        <p class="text-lg font-semibold">Status Transaksi</p>
+      </div>
+      <!-- ./ App Bar -->
+
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 pb-[80px]">
+        <div class="bg-rose-500 relative h-[260px]"></div>
+        <div class="absolute mt-[92px] w-full flex flex-col gap-10 p-4">
+          <!-- Tile -->
+          <div class="flex flex-col">
+            <h1 class="text-lg font-semibold text-center text-white">
+              Transaksi Kadaluarsa
+            </h1>
+            <p class="text-center text-white">
+              Anda sudah melewati batas waktu transaksi yang diharapkan
+            </p>
+          </div>
+          <!-- ./Tile -->
+
+          <!-- Card transaction Info -->
+          <div class="flex flex-col gap-4 p-4 bg-white shadow-md rounded-2xl">
+            <p class="text-xs text-right text-gray-900">
+              ID Transaksi #KS08387847
+            </p>
+            <p class="text-2xl font-bold text-center text-gray-900">
+              - Rp. 300.000
+            </p>
+            <div class="flex flex-col gap-2">
+              <div class="flex justify-between">
+                <p class="text-xs text-gray-500">Kategori</p>
+                <p class="text-xs font-semibold text-gray-900">Uang Keluar</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-xs text-gray-500">Penerima</p>
+                <p class="text-xs font-semibold text-gray-900">Jane Dane</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-xs text-gray-500">Nomor Rekening</p>
+                <p class="text-xs font-semibold text-gray-900">594576747746</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-xs text-gray-500">Waktu Transaksi</p>
+                <p class="text-xs font-semibold text-gray-900">
+                  20 Juni 2024 19:00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card transaction Info -->
+
+          <!-- Button Action -->
+          <button
+            type="button"
+            class="inline-flex items-center bg-transparant p-2.5 rounded-2xl text-brands-light-green uppercase gap-2 text-sm font-semibold hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-transparent disabled:text-gray-400 border-2 border-brands-light-green justify-center"
+          >
+            <span class="i-material-symbols-help-rounded text-icon-md"></span>
+            <span>BUTUH BANTUAN?</span>
+          </button>
+          <!-- ./Button Action -->
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div
+        class="fixed bottom-0 left-0 z-10 flex w-full bg-white justify-evenly"
+      >
+        <a
+          href="#"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-home-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Beranda</span>
+        </a>
+        <a
+          href="#"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-receipt-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-receipt-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Riwayat</span>
+        </a>
+        <a
+          href="#"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-person-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-person-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Akun</span>
+        </a>
+      </div>
+      <!-- ./ Navbar -->
+    </div>
+  </body>
+</html>

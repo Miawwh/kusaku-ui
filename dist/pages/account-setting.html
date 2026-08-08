@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Account Setting</title>
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <!-- App Bar -->
+      <div
+        class="fixed top-0 left-0 z-10 flex items-center w-full gap-5 p-4 text-gray-900 bg-white"
+      >
+        <a
+          href="#"
+          class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+          onclick="history.back()"
+        >
+          <span
+            class="block i-material-symbols-arrow-left-alt-rounded text-icon-md"
+          ></span>
+        </a>
+        <p class="text-lg font-semibold">Pengaturan Akun</p>
+      </div>
+      <!-- ./ App Bar -->
+
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 pb-[80px]">
+        <div class="mt-[92px] flex w-full flex-col gap-8 p-8">
+          <!-- Card Infotmation Personal -->
+          <form
+            action="#"
+            method="post"
+            class="flex flex-col gap-4 rounded-[20px] bg-white p-2.5 shadow-md"
+          >
+            <!-- Title -->
+            <div class="mb-6 text-xl font-semibold text-gray-900 ps-4">
+              Informasi Personal
+            </div>
+            <!-- ./Title -->
+
+            <!-- Input File -->
+            <div class="flex justify-center mb-6">
+              <label for="file-upload" class="cursor-pointer">
+                <div
+                  class="flex size-[100px] items-center justify-center rounded-full bg-gray-300 hover:opacity-70"
+                >
+                  <span
+                    class="text-gray-900 i-material-symbols-upload-rounded text-icon-xl"
+                  ></span>
+                </div>
+                <input id="file-upload" type="file" class="hidden" />
+              </label>
+            </div>
+            <!-- ./Input File -->
+
+            <!-- Input Nama -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="input-nama"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >NAMA</label
+              >
+              <div class="relative">
+                <input
+                  id="input-nama"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Masukan nama"
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-person-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input Nama -->
+
+            <!-- Input Email -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="input-email"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >EMAIL</label
+              >
+              <div class="relative">
+                <input
+                  id="input-email"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="email"
+                  placeholder="Masukan email"
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-mail-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input Email -->
+
+            <!-- Button Save Data -->
+            <button
+              type="button"
+              class="inline-flex items-center bg-transparant p-2.5 rounded-2xl text-brands-light-green uppercase gap-2 text-sm font-semibold hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-transparent disabled:text-gray-400 border-2 border-brands-light-green justify-center"
+            >
+              <span class="i-material-symbols-save-rounded text-icon-md"></span>
+              <span>SIMPAN PERUBAHAN</span>
+            </button>
+            <!-- ./Button Save Data -->
+          </form>
+          <!-- ./ Infotmation Personal -->
+
+          <!-- Card Keamanan PIN  -->
+          <form
+            action="#"
+            method="post"
+            class="flex flex-col gap-4 rounded-[20px] bg-white p-2.5 shadow-md"
+          >
+            <!-- Title -->
+            <div class="mb-6 text-xl font-semibold text-gray-900 ps-4">
+              Keamanan PIN
+            </div>
+            <!-- ./Title -->
+
+            <!-- Input PIN Lama -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="input-pin-lama"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >PIN LAMA</label
+              >
+              <div class="relative">
+                <input
+                  id="input-pin-lama"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Masukan 6 digit PIN lama"
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-security-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input PIN Lama -->
+
+            <!-- Input PIN Baru -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="input-pin-baru"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >PIN BARU</label
+              >
+              <div class="relative">
+                <input
+                  id="input-pin-baru"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Buat 6 digit PIN baru"
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-security-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input PIN Baru -->
+
+            <!-- Input Konfirmasi PIN -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="konfirmasi-pin"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >KONFIRMASI PIN</label
+              >
+              <div class="relative">
+                <input
+                  id="konfirmasi-pin"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Buat 6 digit PIN baru"
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-security-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input Konfirmasi PIN -->
+
+            <!-- Button Save Data -->
+            <button
+              type="button"
+              class="inline-flex items-center bg-transparant p-2.5 rounded-2xl text-brands-light-green uppercase gap-2 text-sm font-semibold hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-transparent disabled:text-gray-400 border-2 border-brands-light-green justify-center"
+            >
+              <span class="i-material-symbols-save-rounded text-icon-md"></span>
+              <span>SIMPAN PERUBAHAN</span>
+            </button>
+            <!-- ./Button Save Data -->
+          </form>
+          <!-- ./ Card Keamanan PIN  -->
+
+          <!-- Card Penarikan Dana -->
+          <form
+            action="#"
+            method="post"
+            class="flex flex-col gap-4 rounded-[20px] bg-white p-2.5 shadow-md"
+          >
+            <!-- Title -->
+            <div class="mb-6 text-xl font-semibold text-gray-900 ps-4">
+              Penarikan Dana
+            </div>
+            <!-- ./Title -->
+
+            <!-- Pilih BANK -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="bank"
+                class="text-sm font-medium text-gray-900 uppercase ps-4 empty:hidden"
+                >Pilih Bank
+              </label>
+              <div class="relative">
+                <select
+                  id="bank"
+                  placeholder="Pilih bank tujuan penarikan"
+                  class="w-full p-3 text-sm font-normal text-gray-900 bg-white border border-gray-400 appearance-none peer rounded-2xl pe-12 ps-12 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-100"
+                >
+                  <option value="bri">Bank BRI</option>
+                  <option value="bca">Bank BCA</option>
+                  <option value="jago">Bank Jago</option>
+                </select>
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 pointer-events-none text-icon-md start-0 ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span
+                    class="i-material-symbols-account-balance-rounded"
+                  ></span>
+                </div>
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 pointer-events-none text-icon-md end-0 pe-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span
+                    class="i-material-symbols-keyboard-arrow-down-rounded"
+                  ></span>
+                </div>
+              </div>
+              <p
+                class="text-xs font-normal text-gray-900 ps-4 empty:hidden"
+              ></p>
+            </div>
+            <!-- ./Pilih BANK -->
+
+            <!-- Input Nama Pemiliki Rekening -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="input-nama-rekening-pemilik"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >NAMA DI REKENING</label
+              >
+              <div class="relative">
+                <input
+                  id="input-nama-rekening-pemilik"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Masukan nama pemilik rekening..."
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-person-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input Nama Pemiliki Rekening -->
+
+            <!-- Input Nomor Rekening -->
+            <div class="flex flex-col gap-y-1.5">
+              <label
+                for="input-nomor-rekening"
+                class="text-sm font-medium text-gray-900 uppercase ps-4"
+                >NO. REKENING</label
+              >
+              <div class="relative">
+                <input
+                  id="input-nomor-rekening"
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 ps-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Masukan No. Rekening..."
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 start-0 text-icon-md ps-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span
+                    class="i-material-symbols-account-balance-wallet"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Input Nomor Rekening -->
+
+            <!-- Button Save Data -->
+            <button
+              type="button"
+              class="inline-flex items-center bg-transparant p-2.5 rounded-2xl text-brands-light-green uppercase gap-2 text-sm font-semibold hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-transparent disabled:text-gray-400 border-2 border-brands-light-green justify-center"
+            >
+              <span class="i-material-symbols-save-rounded text-icon-md"></span>
+              <span>SIMPAN PERUBAHAN</span>
+            </button>
+            <!-- ./Button Save Data -->
+          </form>
+          <!-- ./Card Penarikan Dana  -->
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div
+        class="fixed bottom-0 left-0 z-10 flex w-full bg-white justify-evenly"
+      >
+        <a
+          href="dashboard.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-home-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Beranda</span>
+        </a>
+        <a
+          href="transaction-history.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-receipt-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-receipt-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Riwayat</span>
+        </a>
+        <a
+          href="account.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-person-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-person-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Akun</span>
+        </a>
+      </div>
+      <!-- ./ Navbar -->
+    </div>
+  </body>
+</html>

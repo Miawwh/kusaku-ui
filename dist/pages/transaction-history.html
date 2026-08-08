@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Transaction History</title>
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <!-- App Bar -->
+      <div
+        class="fixed top-0 left-0 z-10 flex items-center w-full gap-5 p-4 text-gray-900 bg-white"
+      >
+        <a
+          href="#"
+          class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+          onclick="history.back()"
+        >
+          <span
+            class="block i-material-symbols-arrow-left-alt-rounded text-icon-md"
+          ></span>
+        </a>
+        <p class="text-lg font-semibold">Riwayat Transaksi</p>
+      </div>
+      <!-- ./ App Bar -->
+
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 pb-[80px] px-4">
+        <div class="mt-[88px] flex flex-col w-full">
+          <div class="bg-white p-2.5 shadow-md rounded-[20px]">
+            <!-- Card Header -->
+            <div class="flex flex-col gap-1.5 mb-2">
+              <div class="relative">
+                <input
+                  class="w-full p-3 text-sm text-gray-900 bg-white border border-gray-400 rounded-2xl pe-12 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:invalid:ring-red-900 peer disabled:border-gray-300 disabled:bg-gray-100"
+                  type="text"
+                  placeholder="Cari transaksi..."
+                />
+                <div
+                  class="absolute inset-y-0 flex items-center text-gray-400 end-0 text-icon-md pe-4 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-search-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <!-- ./Card Header -->
+            <!-- Items -->
+            <a
+              href="transaction-canceled.html"
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-download-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Jeremiah Lengkong</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >2 Agustus 2026</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span class="text-xs font-medium text-brands-light-green"
+                  >+ Rp. 50.000,00</span
+                >
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href="transaction-expired.html"
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-download-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Edward P. Jones</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >1 Agustus 2026</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span class="text-xs font-medium text-red-500"
+                  >- Rp. 50.000,00</span
+                >
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href="transaction-failed.html"
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-download-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Roy L. Selden</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >29 Juli 2026</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span class="text-xs font-medium text-red-500"
+                  >- Rp. 50.000,00</span
+                >
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href="transaction-pending.html"
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-download-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Ernest T. Kirkwood</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >12 Juli 2026</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span class="text-xs font-medium text-red-500"
+                  >- Rp. 50.000,00</span
+                >
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href="transaction-settled.html"
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-download-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Dexter Morgan</span
+                  >
+                  <span class="text-xs text-gray-500 line-clamp-1"
+                    >12 Juli 2024</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span class="text-xs font-medium text-red-500"
+                  >- Rp. 300.000,00</span
+                >
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <!-- ./Items -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div
+        class="fixed bottom-0 left-0 z-10 flex w-full bg-white justify-evenly"
+      >
+        <a
+          href="dashboard.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-home-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Beranda</span>
+        </a>
+        <a
+          href="#"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-receipt-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-receipt-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Riwayat</span>
+        </a>
+        <a
+          href="account.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-person-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-person-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Akun</span>
+        </a>
+      </div>
+      <!-- ./ Navbar -->
+    </div>
+  </body>
+</html>

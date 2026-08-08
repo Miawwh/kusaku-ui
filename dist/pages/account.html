@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Account</title>
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <!-- App Bar -->
+      <div
+        class="fixed top-0 left-0 z-10 flex items-center w-full gap-5 p-4 text-gray-900 bg-white"
+      >
+        <a
+          href="#"
+          class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+          onclick="history.back()"
+        >
+          <span
+            class="block i-material-symbols-arrow-left-alt-rounded text-icon-md"
+          ></span>
+        </a>
+        <p class="text-lg font-semibold">Akun</p>
+      </div>
+      <!-- ./ App Bar -->
+
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 pb-[80px]">
+        <div class="bg-brands-light-green relative h-[260px]"></div>
+        <div class="absolute mt-[92px] w-full flex flex-col gap-10 p-4">
+          <!-- Avatar + Name -->
+          <div class="flex justify-between">
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-green-400"
+            >
+              <img
+                src="https://avatarapi.runflare.run/public"
+                alt="Avatar"
+                class="size-8"
+              />
+              <span class="flex flex-col text-white">
+                <span class="text-lg font-semibold">Andrew Lengkong</span>
+                <span class="text-xs">2935235290375</span>
+              </span>
+            </a>
+            <!-- Button Tarik Saldo -->
+            <button
+              type="button"
+              class="inline-flex items-center gap-2 p-2 text-xs font-semibold uppercase bg-white rounded-2xl text-brands-light-green hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-200 disabled:bg-transparent disabled:text-gray-400"
+              onclick="window.location.href = 'withdrawal.html'"
+            >
+              <span
+                class="text-icon-sm i-material-symbols-account-balance-wallet"
+              ></span>
+              <span>TARIK SALDO</span>
+            </button>
+            <!-- ./Button Tarik Saldo -->
+          </div>
+          <!-- ./Avatar + Name -->
+
+          <!-- Card Menu Setting -->
+          <div class="bg-white p-2.5 shadow-md rounded-[20px]">
+            <!-- Items -->
+            <a
+              href="account-setting.html"
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-manage-accounts-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Pengaturan</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href=""
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-help-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Pusat Bantuan</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href=""
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-book-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Syarat & Ketentuan</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+
+            <a
+              href=""
+              class="flex justify-between p-3 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-2xl"
+            >
+              <!-- Left  -->
+              <span class="flex items-center gap-5">
+                <span
+                  class="flex flex-shrink-0 i-material-symbols-info-rounded text-icon-lg text-brands-light-green"
+                ></span>
+                <span class="flex flex-col">
+                  <span class="text-sm font-semibold text-gray-900 line-clamp-2"
+                    >Tentang KUSAKU</span
+                  >
+                </span>
+              </span>
+              <!-- ./Left -->
+
+              <!-- Right -->
+              <span class="flex items-center flex-shrink-0 gap-2">
+                <span
+                  class="text-gray-900 i-material-symbols-chevron-right-rounded text-icon-md"
+                ></span>
+              </span>
+              <!-- ./Right -->
+            </a>
+            <div class="my-2.5 flex gap-4 px-5 whitespace-nowrap last:hidden">
+              <div class="flex-grow-1 h-[1px] bg-gray-300 w-full"></div>
+            </div>
+            <!-- ./Items -->
+          </div>
+          <!-- ./Card menu Setting -->
+
+          <!-- Button Action -->
+          <button
+            type="button"
+            class="inline-flex items-center bg-transparant p-2.5 rounded-2xl text-brands-light-green uppercase gap-2 text-sm font-semibold hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-transparent disabled:text-gray-400 border-2 border-brands-light-green justify-center"
+            onclick="window.location.href = 'index.html'"
+          >
+            <span
+              class="i-material-symbols-power-settings-new-rounded text-icon-md"
+            ></span>
+            <span>KELUAR APLIKASI</span>
+          </button>
+          <!-- ./Button Action -->
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div
+        class="fixed bottom-0 left-0 z-10 flex w-full bg-white justify-evenly"
+      >
+        <a
+          href="dashboard.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-home-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-home-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Beranda</span>
+        </a>
+        <a
+          href="transaction-history.html"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-receipt-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-receipt-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Riwayat</span>
+        </a>
+        <a
+          href="#"
+          class="flex flex-col items-center w-full p-3 text-gray-900 group hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+        >
+          <span
+            class="inline i-material-symbols-person-outline-rounded text-icon-md group-hover:hidden"
+          ></span>
+          <span
+            class="hidden i-material-symbols-person-rounded text-icon-md group-hover:inline"
+          ></span>
+          <span class="text-xs font-semibold">Akun</span>
+        </a>
+      </div>
+      <!-- ./ Navbar -->
+    </div>
+  </body>
+</html>
