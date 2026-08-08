@@ -1,5 +1,3 @@
-Here is a clean, modern, and developer-friendly `README.md` written in English. It hits the sweet spot between professional and approachable, and prominently features your Figma link right near the top.
-
 ```markdown
 # 💳 Kusaku UI — E-Wallet Mobile Prototype
 
